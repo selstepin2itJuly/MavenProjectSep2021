@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+	<listeners>
+    	<listener class-name="listeners.Listeners" />
+  	</listeners>
+<groups>
+    <run>
+      <include name="sanity"/>
+      <!-- <exclude name="Regression"/>  -->
+      <include name="Regression"/>
+    </run>
+  </groups>
+
+  <test name="Test">
+    <classes>
+      <class name="testcases.ClassOne"/>
+      <class name="testcases.LoginFeature"/>
+      <class name="testcases.DahboardFeature"/>
+      <class name="testcases.MyInfoFeature"/>
+    </classes>
+  </test> <!-- Test -->
+   <test name="Test1">
+    <classes>
+      <class name="testcases.ClassOne"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
